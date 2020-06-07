@@ -35,11 +35,10 @@ blueParagraph.addEventListener ( 'click' , () => {
 	blueParagraph.style.color= "blue";
 	}
 });
-
-// Know more about interaction!
+// KATIE 
 let MakeGhostTextAppear = ()  => {
 	// How do i change the font and alignment of the ghost-text if its and id? 
-	document.getElementById("ghost-text").innerText = "We are queer and Proud!"
+	document.getElementById("ghost-text").innerText = "Non-binary and Proud!"
 }
 
 let MakeGhostTextDisappear = () => {
@@ -55,45 +54,57 @@ let greetingElement=document.getElementById("greeting-text");
 
 	greetingElement.addEventListener('mouseleave', MakeGhostTextDisappear)
 
+// PAM
+let MakeGhostTextAppear1 = ()  => {
+	// How do i change the font and alignment of the ghost-text if its and id? 
+	document.getElementById("ghost-text2").innerText = "Queer and Proud!"
+}
+
+let MakeGhostTextDisappear1 = () => {
+// To make something disappear after a certain delay of time
+	setTimeout(() => {
+		document.getElementById("ghost-text2").innerText = "";
+	},1000)
+	 
+}
+let greetingElement2=document.getElementById("greeting-text2");
+	greetingElement2.addEventListener('mouseenter', MakeGhostTextAppear1)
+		
+
+	greetingElement2.addEventListener('mouseleave', MakeGhostTextDisappear1)
+
+// Sashank
+let MakeGhostTextAppear2 = ()  => {
+
+	document.getElementById("ghost-text3").innerText = "Trans and Proud!"
+}
+
+let MakeGhostTextDisappear2 = () => {
+	setTimeout(() => {
+		document.getElementById("ghost-text3").innerText = "";
+	},1000)
+	 
+}
+let greetingElement3=document.getElementById("greeting-text3");
+	greetingElement3.addEventListener('mouseenter', MakeGhostTextAppear2)
+		
+
+	greetingElement3.addEventListener('mouseleave', MakeGhostTextDisappear2)
+
 // Music of pride 2020
-<<<<<<< HEAD
+let Musicplay=document.getElementById("audio");
+	Musicplay.addEventListener ('mouseenter',playAudio)
+	Musicplay.addEventListener('mouseleave',pauseAudio)
+
 let audio = new Audio('lesbicafuturista.mp3');
 function playAudio(){
-	audio.play('mouseenter')
+	audio.play()
 	console.log("play audio")
 }
 
 function pauseAudio(){
-	setTimeout(() => {
-		audio.pause('mouseleave')
-
-	},1000)
-	
+	audio.pause()
 	console.log("pause audio")
 }
 
-
-
-
-
-
-
-// this didnt work
-
-let MakeMusicAppear =() => {}
-=======
-let MakeMusicAppear =() => {
-	document.getElementById('music').play();
-}
->>>>>>> parent of 589372c... updated 5pm
-let MakeMusicDisappear =() => {
-	setTimeout(() => {
-		document.getElementById('music').stop();
-	}
-},1000
-
-
-let musicAppear=document.getElementById("music");
-	greetingElement.addEventListener('mouseenter',MakeMusicAppear)
-	greetingElement.addEventListener('mouseleave',MakeMusicDisappear)
 
